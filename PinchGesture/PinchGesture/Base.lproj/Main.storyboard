@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Smg-U7-IoP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Text View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TextViewController" customModule="PinchGesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dU-UD-dfe">
+                                <rect key="frame" x="16" y="44" width="382" height="818"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7dU-UD-dfe" secondAttribute="trailing" constant="16" id="Pqx-hS-I2f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7dU-UD-dfe" secondAttribute="bottom" id="Tbj-cf-tr7"/>
+                            <constraint firstItem="7dU-UD-dfe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cxS-nD-IbQ"/>
+                            <constraint firstItem="7dU-UD-dfe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iaa-IR-6zs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtPinch" destination="7dU-UD-dfe" id="eTa-jY-hjl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="84"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="8Vt-9o-H3b">
+            <objects>
+                <viewController id="Smg-U7-IoP" customClass="ImageViewController" customModule="PinchGesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bT1-AY-IJo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-06.png" translatesAutoresizingMaskIntoConstraints="NO" id="uD7-Fa-2sO">
+                                <rect key="frame" x="16" y="44" width="382" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3BW-J0-Egj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3BW-J0-Egj" firstAttribute="bottom" secondItem="uD7-Fa-2sO" secondAttribute="bottom" id="0Gn-pu-G1m"/>
+                            <constraint firstItem="uD7-Fa-2sO" firstAttribute="leading" secondItem="3BW-J0-Egj" secondAttribute="leading" constant="16" id="2Wz-x4-wBi"/>
+                            <constraint firstItem="uD7-Fa-2sO" firstAttribute="top" secondItem="3BW-J0-Egj" secondAttribute="top" id="GjV-td-JaQ"/>
+                            <constraint firstItem="3BW-J0-Egj" firstAttribute="trailing" secondItem="uD7-Fa-2sO" secondAttribute="trailing" constant="16" id="J6p-dx-Weg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgPinch" destination="uD7-Fa-2sO" id="5A2-8g-gv4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oiy-zv-XaN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img-06.png" width="1686" height="2448"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
